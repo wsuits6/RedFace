@@ -63,5 +63,53 @@ body{
 }
 
 
+.eye{
+    background: #000;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 49%;
+    top: 100px;
+    left: 40px;
+    bottom:70px;
+    position: absolute;
+}
 
+/*Left Eye */
+.eye::before{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    top:24px;
+    left: 50px;
+    right: -10px;
+    border-radius: 50%;
+}
 
+.right-eye{
+    background: #000;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 49%;
+    top: 100px;
+    left: 195px;
+    position: absolute;
+    z-index: 0;
+}
+.right-eye::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    top:24px;
+    left: 50px;
+    right: -10px;
+    border-radius: 50%;
+    z-index: 1;
+}
