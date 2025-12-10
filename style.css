@@ -191,3 +191,29 @@ body{
     left: -30px; 
     border-radius: 20%;
 }
+
+
+/**Hmmmmmmmmmmmm PRESS Q part of all Psudeo classes shit */
+.brows{
+    background: #000 ;
+    content: "";
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    top: 80px;
+    left: 30px; 
+    border-radius: 50%;
+    transform: rotate(-10deg);   
+}
+
+.brows::after{
+    background: #000 ;
+    content: "";
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    top: 30px;
+    right: -160px; 
+    border-radius: 50%;
+    transform: rotate(20deg);
+}
