@@ -113,3 +113,11 @@ body{
     border-radius: 50%;
     z-index: 1;
 }
+.hair-up{
+    content: "";
+    background: #000;
+    border: solid 2px #000;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+}
