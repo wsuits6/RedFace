@@ -21,6 +21,7 @@ body{
     position: relative;
     border-bottom: 4px solid #000;
     border-radius: 40% 60% 60% 80% / 40% 60% 60% 80%;
+    box-shadow: 0px 0px 50px #000;
 }
 .face::after{
     width: 190px;
@@ -141,3 +142,52 @@ body{
     z-index: -1;
 }
 
+.horn-left{
+    content: "";
+    background: #000;
+    width:105px;
+    height: 35px;
+    position: absolute;
+    rotate: -50deg;
+    top: 5px;
+    border-radius: 20%;
+}
+
+.horn-left::after{
+    content: "";
+    background: #000;
+    width:105px;
+    height: 35px;
+    position: absolute;
+    rotate: 100deg;
+    top: 25px;
+    left: 30px;
+  
+    border-radius: 20%;   
+}
+
+/* Styling for the Right Horn */
+.horn-right {
+    content: "";
+    background: #000;
+    width: 105px;
+    height: 35px;
+    position: absolute;
+    rotate: 50deg; 
+    top: 5px;
+
+    right: 0px; 
+    border-radius: 20%;
+}
+
+.horn-right::after {
+    content: "";
+    background: #000;
+    width: 105px;
+    height: 35px;
+    position: absolute;
+    rotate: -100deg; 
+    top: 25px;
+    left: -30px; 
+    border-radius: 20%;
+}
