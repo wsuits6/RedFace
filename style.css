@@ -252,7 +252,7 @@ KOFIS HORN
    animation: bounce 2s ease-in-out infinite;
 
    /*ANIMATION*/
-   animation: raiseHorn 2s infinite ease-in-out;
+   animation: raiseHornRight 2s infinite ease-in-out;
 }
 
 .horn-right::after {
@@ -325,20 +325,18 @@ MOUTH OF KOFI
 
 /*
 ===========
-RAIS HORNS
+RAIS HORN RIGTH
 */
 
-@keyframes raiseHorn {
+@keyframes raiseHornRight {
     0%, 20% {
-        transform: rotate(25deg) translateY(0);
+        transform: rotate(-55deg) translateY(0);
     }
-
     50% {
-        transform: rotate(25deg) translateY(-15px);
+        transform: rotate(-55deg) translateY(-15px);
     }
-
     80%, 100% {
-        transform: rotate(25deg) translateY(0);
+        transform: rotate(-55deg) translateY(0);
     }
 }
 
