@@ -83,16 +83,19 @@ EYE OF KOF
 ============
 */
 
+
+/*MAIN EYE*/
 .eye-left {
    background: #000;
    height: 60px;
    width: 65px;
    position: absolute;
    top: 90px;
-   left: 30px;
-   border-radius: 50px 50px;
+   left: 45px;
+   border-radius: 50%;
 }
 
+/*BROWS*/
 
 .eye-left::before {
    content: '';
@@ -101,11 +104,11 @@ EYE OF KOF
    position: absolute;
    border-radius: 50%;
    top: -30px;
-   left: -10px;
+   left: -15px;
    border-top: 4px solid #000;
 }
 
-
+/*INNER EYE*/
 .eye-left::after {
    content: '';
    background: #fff;
@@ -117,7 +120,7 @@ EYE OF KOF
    left: 17px;
 }
 
-
+/*RIGHT EYE*/
 .eye-right {
    background: #000;
    height: 60px;
@@ -125,11 +128,11 @@ EYE OF KOF
    position: absolute;
    top: 90px;
    right: 30px;
-    border-radius: 50px 50px;
+    border-radius: 50%;
    z-index: 1;
 }
 
-
+/*EYE BROWS*/
 .eye-right::before {
    content: '';
    width: 90px;
@@ -249,5 +252,20 @@ KOFIS HORN
    border-radius: 80% 60% 80% 60%;
 }
 
+/*
+================
+MOUTH OF KOFI
+================
+*/
 
-
+.mouth {
+   background: #A54253;
+   width: 35px;
+   height: 45px;
+   position: absolute;
+   bottom: -20px;
+   left: 130px;
+   z-index: 1;
+   border-radius: 50px;
+   border: 2px solid #000;
+}
