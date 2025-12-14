@@ -112,3 +112,63 @@ HAIR STYLING
    border-radius: 80% 20% 20% 20%;
    z-index: -2;
 }
+
+
+
+/*
+----------------------
+KOFIS HORN 
+----------------------
+*/
+
+/*LEFT*/
+.horn-left {
+    background: #000;
+    width: 25px;
+    height: 70px;
+    position: absolute;
+    top: -15px;
+    transform: rotate(25deg);
+    border-radius: 80% 60% 80% 60%;
+}
+
+
+.horn-left::after {
+   content: '';
+   background: #000;
+   width: 25px;
+   height: 65px;
+   position: absolute;
+   top: -10px;
+   left: 22px;
+   transform: rotate(-65deg);
+   border-radius: 80% 60% 80% 60%;
+}
+
+
+
+/*RIGHT*/
+.horn-right {
+   background: #000;
+   width: 25px;
+   height: 70px;
+   position: absolute;
+   top: -15px;
+   right: 30px;
+   transform: rotate(-55deg);
+   border-radius: 80% 60% 80% 60%;
+   animation: bounce 2s ease-in-out infinite;
+}
+
+.horn-right::after {
+   content: '';
+   background: #000;
+   width: 25px;
+   height: 65px;
+   position: absolute;
+   top: -18px;
+   right: 25px;
+   transform: rotate(80deg);
+   border-radius: 80% 60% 80% 60%;
+}
+
