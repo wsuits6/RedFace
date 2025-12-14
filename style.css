@@ -117,8 +117,13 @@ EYE OF KOF
    position: absolute;
    border-radius: 50%;
    top: 15px;
-   left: 17px;
+   left: 20px;
+
+   /*Adding animation*/
+   animation: look 2s ease-in-out infinite;
 }
+
+
 
 /*RIGHT EYE*/
 .eye-right {
@@ -144,6 +149,7 @@ EYE OF KOF
    border-top: 4px solid #000;
 }
 
+/*Inner EYE*/
 
 .eye-right::after {
    content: '';
@@ -153,7 +159,10 @@ EYE OF KOF
    position: absolute;
    border-radius: 50%;
    top: 15px;
-   right: 17px;
+   right: 20px;
+
+   /*ANIMATION*/
+   animation: look 2s ease-in-out infinite;
 }
 
 
@@ -268,4 +277,25 @@ MOUTH OF KOFI
    z-index: 1;
    border-radius: 50px;
    border: 2px solid #000;
+}
+
+
+
+/*ANIMATIONS*/
+
+
+/*EYE ANIMATION*/
+@keyframes look {
+   0%, 20% {
+      transform: translateX(0);
+   }
+   40% {
+      transform: translateX(-6px);
+   }
+   60% {
+      transform: translateX(6px);
+   }
+   80%, 100% {
+      transform: translateX(0);
+   }
 }
