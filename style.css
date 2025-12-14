@@ -1,0 +1,26 @@
+/**  
+=========================  
+GLOBAL RESETS
+=========================
+
+CSS FACE BY WSUITS6
+
+**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main Body Element Styling*/
+body {
+    background: #FF3131;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
