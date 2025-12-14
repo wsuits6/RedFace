@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Face</title>
-
+    <title>CSS Cartoon Head</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="face">
-        <div class="brows"></div>
-        <div class="hair-up"></div> 
-        <div class="hair-down"></div>
-        <div class="horn-right"></div>
-        <div class="horn-left"></div>
-        <div class="eye"></div>
-        <div class="right-eye"></div>
-        <div class="mouth"></div>
-        <div class="ear"></div>
+
+<!---Wrapper for all elements -->
+<div class="wrapper">
+    <!--Head Container-->
+    <div class="head">
+
+        <!---HAIR-->
+        <div class="hair"></div>
+
+        <!---EARS-->
+        <div class="ear-left"></div>
+        <div class="ear-right"></div>
+
+        <!---EYES-->
+        <div class="eye-left"></div>
+        <div class="eye-right"></div>
+
+        <!--EYEBROWS-->
+        <div class="eyebrow-left"></div>
+        <div class="eyebrow-right"></div>
+
+        <!--MOUTH-->
+        <div class="mouth">
+            <div class="toungue"></div>
+        </div>
     </div>
+</div>
+
+<!----Project description -->
+<p class="description">
+    This illustration was created using CSS positioning, border-radius for organic
+    shapes, and pseudo-elements for details like highlights. Absolute positioning
+    and z-index were used to layer facial features correctly. One challenge was
+    balancing proportions so the face scaled well on different screen sizes.
+  </p>
 </body>
 </html>
