@@ -78,3 +78,37 @@ Head styling
 }
 
 
+/*
+=================
+HAIR STYLING
+=================
+
+*/
+
+
+/*Main Hari element Styling  TOP HAIR */
+
+
+.hair {
+   background: #000;
+   width: 165px;
+   height: 15px;
+   position: absolute;
+   top: -2px;
+   left: 19px;
+   border-radius: 60% 60% 60% 80%;
+}
+
+/*Back hair using psudeo class */
+
+.hair:before {
+   content: '';
+   background: #000;
+   width: 80px;
+   height: 155px;
+   position: absolute;
+   left: -49px;
+   transform: rotate(50px);
+   border-radius: 80% 20% 20% 20%;
+   z-index: -2;
+}
