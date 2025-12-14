@@ -77,6 +77,83 @@ Head styling
     border-radius: 0% 70% 80% 40%;
 }
 
+/*
+============
+EYE OF KOF
+============
+*/
+
+.eye-left {
+   background: #000;
+   height: 60px;
+   width: 65px;
+   position: absolute;
+   top: 90px;
+   left: 30px;
+   border-radius: 50px 50px;
+}
+
+
+.eye-left::before {
+   content: '';
+   width: 90px;
+   height: 90px;
+   position: absolute;
+   border-radius: 50%;
+   top: -30px;
+   left: -10px;
+   border-top: 4px solid #000;
+}
+
+
+.eye-left::after {
+   content: '';
+   background: #fff;
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   border-radius: 50%;
+   top: 15px;
+   left: 17px;
+}
+
+
+.eye-right {
+   background: #000;
+   height: 60px;
+   width: 65px;
+   position: absolute;
+   top: 90px;
+   right: 30px;
+    border-radius: 50px 50px;
+   z-index: 1;
+}
+
+
+.eye-right::before {
+   content: '';
+   width: 90px;
+   height: 90px;
+   position: absolute;
+   border-radius: 50%;
+   top: -30px;
+   right: -10px;
+   border-top: 4px solid #000;
+}
+
+
+.eye-right::after {
+   content: '';
+   background: #fff;
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   border-radius: 50%;
+   top: 15px;
+   right: 17px;
+}
+
+
 
 /*
 =================
@@ -171,4 +248,6 @@ KOFIS HORN
    transform: rotate(80deg);
    border-radius: 80% 60% 80% 60%;
 }
+
+
 
