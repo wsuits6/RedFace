@@ -219,6 +219,9 @@ KOFIS HORN
     top: -15px;
     transform: rotate(25deg);
     border-radius: 80% 60% 80% 60%;
+
+   /*ANIMATION*/
+   animation: raiseHornLeft 2s ease-in-out infinite;
 }
 
 
@@ -247,6 +250,9 @@ KOFIS HORN
    transform: rotate(-55deg);
    border-radius: 80% 60% 80% 60%;
    animation: bounce 2s ease-in-out infinite;
+
+   /*ANIMATION*/
+   animation: raiseHorn 2s infinite ease-in-out;
 }
 
 .horn-right::after {
@@ -277,6 +283,10 @@ MOUTH OF KOFI
    z-index: 1;
    border-radius: 50%;
    border: 2px solid #000;
+   
+
+   /*Aniamtion OPEN MOUTH */
+   animation: openmouth 2s infinite ease-in-out;
 }
 
 
@@ -298,4 +308,56 @@ MOUTH OF KOFI
    80%, 100% {
       transform: translateX(0);
    }
+}
+
+
+/*MOUTH ANIMATION OPEN MOUTH*/
+@keyframes openmouth {
+   0% {
+      transform: scaleY(0.4);
+   }
+
+   100% {
+      transform: scaleY(1);
+   }
+}
+
+
+/*
+===========
+RAIS HORNS
+*/
+
+@keyframes raiseHorn {
+    0%, 20% {
+        transform: rotate(25deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(25deg) translateY(-15px);
+    }
+
+    80%, 100% {
+        transform: rotate(25deg) translateY(0);
+    }
+}
+
+
+/*
+====================================
+STYLES for horn Left aniamtion.
+becuase it overridig the trnasform 
+====================================
+*/
+
+@keyframes raiseHornLeft {
+    0%, 20% {
+        transform: rotate(25deg) translateY(0);
+    }
+    50% {
+        transform: rotate(25deg) translateY(-15px);
+    }
+    80%, 100% {
+        transform: rotate(25deg) translateY(0);
+    }
 }
